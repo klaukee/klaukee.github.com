@@ -1,0 +1,295 @@
+/*
+Homepage Navigation styling
+*/
+
+/* Font Embedding */
+
+@font-face {
+    font-family: 'InterstateLightRegular';
+    src: url('fonts/interstate-light-webfont.eot');
+    src: url('fonts/interstate-light-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('fonts/interstate-light-webfont.woff') format('woff');
+    src: url('fonts/interstate-light-webfont.ttf') format('truetype');
+    src: url('fonts/interstate-light-webfont.svg#InterstateLightRegular') format('svg');  
+    src: url(fonts/interstate-light-webfont.ttf) format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'InterstateBold';
+    src: url('fonts/interstate-bold-webfont.eot');
+    src: url('fonts/interstate-bold-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('fonts/interstate-bold-webfont.woff') format('woff');
+    src: url('fonts/interstate-bold-webfont.ttf') format('truetype');
+    src: url('fonts/interstate-bold-webfont.svg#InterstateBold') format('svg');
+    src: url(fonts/interstate-bold-webfont.ttf) format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nevisBold';
+    src: url('fonts/nevis-webfont.eot');
+    src: url('fonts/nevis-webfont.eot?#iefix') format('embedded-opentype');
+    src: url('fonts/nevis-webfont.woff') format('woff');
+    src: url('fonts/nevis-webfont.ttf') format('truetype');
+    src: url('fonts/nevis-webfont.svg#nevisBold') format('svg');
+    src: url(fonts/nevis-webfont.ttf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body Styling */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #EFEFEF;
+}
+
+div#navigationcontent {
+	margin-top: 40px;
+}
+
+div#header img {
+	margin-left: 216px;
+}
+
+a:active {
+ outline: none;
+}
+
+/* Navigation Bar */
+
+.current {
+	font-weight: bold;
+	color: #29A8DF;
+}
+
+div#navigationbar {
+	margin-top: 40px;
+}
+
+div#navigationbar img{
+	margin-left: -40px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	border: none;
+}
+
+div#navigationbar li{
+	list-style-type: none;
+}
+
+
+/* Project List */
+
+.projectimage {
+	margin-top: -171px;
+	margin-bottom: 40px;
+}
+
+.projectimage img{
+	border: none;
+}
+
+.projectimage li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 8px;
+	padding-left: 8px;
+}
+
+.projectimage a {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+
+div#project_container {
+	margin-top: 20px;
+	margin-left: 208px;
+}
+
+.floatleft {
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+/* Bottom Bar */
+
+div#bottombar {
+	background: #333333;
+	margin-top: 30px;
+	padding-top: 30px;	
+	padding-bottom: 45px
+}
+
+div#bottomcontent {
+	font-family: Arial;
+	font-weight: lighter;
+	font-size: 9pt;
+	color: white;
+	margin-left: 216px;
+}
+
+div#bottomcontent img{
+	border: none;
+}
+
+.copyright {
+	margin-left: 720px;
+}
+
+.socialnetwork li{
+	list-style-type: none;
+	padding-right: 7px;
+	display: inline;
+}
+
+.socialnetwork {
+	margin-right: 715px;
+}
+
+/* Project Bar */
+
+div#bottomcontentproj {
+	font-family: Arial;
+	font-weight: lighter;
+	font-size: 9pt;
+	color: white;
+}
+
+div#bottomcontentproj img{
+	border: none;
+}
+
+.copyrightproj {
+	margin-left: 930px;
+}
+
+.socialnetworkproj li{
+	list-style-type: none;
+	padding-right: 7px;
+	display: inline;
+	
+}
+
+.socialnetworkproj {
+	margin-left: 215px;
+}
+
+
+/* Project Presentation */
+
+div#kellypicture {
+	margin-top: -168px;
+	margin-left: 210px;
+	padding-bottom: 400px;
+	width: 700px;
+}
+
+div#kellypicture h1{
+	font-family: "InterstateLightRegular";
+	font-size: 18px;
+	color: #414042;
+	font-weight: normal;
+}
+
+div#kellypicture h2{
+	font-family: "InterstateLightRegular";
+	font-size: 14px;
+	color: gray;
+	line-height: 18px;
+	font-weight: lighter;
+}
+
+div#kellypicture a{
+	font-size: 14px;
+	font-family: 'InterstateLightRegular';
+	color: #DF5826;
+	font-weight: lighter;
+}
+
+
+div#slideshowtotal {
+	margin-left: 216px;
+	padding-top: 28px;
+	
+}
+
+div#project_content {
+	margin-top: -60px;
+	margin-left: 216px;
+	width: 600px;
+	
+}
+
+div#project_content li{
+	list-style-type: none;
+	padding-bottom: 20px;
+}
+
+div#project_content a{
+	font-size: 9pt;
+	line-height: 18px;
+	font-family: 'InterstateLightRegular';
+	font-weight: light;
+	color: #DF5826;
+}
+
+
+div#project_content h1{
+	font-size: 14pt;
+	color: #414042;
+	font-family: 'nevisBold';
+	font-weight: lighter;
+	
+}
+
+div#project_content h2{
+	font-size: 9pt;
+	line-height: 18px;
+	font-family: 'InterstateLightRegular';
+	color: #808285;
+	font-weight: lighter;
+}
+
+div#project_content h3{
+	font-size: 13pt;
+	color: #414042;
+	font-family: 'InterstateBold';
+	font-weight: normal;
+}
+
+div#project_content h4{
+	font-size: 9pt;
+	line-height: 18px;
+	font-family: 'InterstateLightRegular';
+	font-weight: lighter;
+}
+
+/* Scroll to Top */
+
+#toTop {
+	width:100px;
+        background:#97D1D2;
+        text-align:center;
+        padding:5px;
+        position:fixed; /* this is the magic */
+        bottom:51px; /* together with this to put the div at the bottom*/
+        left:46px;
+        cursor:pointer;
+        display:none;
+        color:white;
+        font-family:Helvetica, Arial;
+        font-weight: bold;
+        font-size:12px;
+}
+
+
+	/** Targets the iPad **/
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		
+	}
+
