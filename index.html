@@ -8,15 +8,6 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link href="style.css" rel="stylesheet" type="text/css"/>
 		
-		<link rel="stylesheet" type="text/css" href="demoStyleSheet.css" />
-		<script type="text/javascript" src="jquery.js"></script>
-		<script type="text/javascript" src="fadeSlideShow.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function(){
-			jQuery('#slideshow').fadeSlideShow();
-			});
-		</script>
-		
 		<! Hover Images>
 		<script language="Javascript">
 				if (document.images) {
@@ -84,24 +75,6 @@
  				}
 		</script>
 		
-	<! Back to Top>
-		<script src="path/to/js/jquery.js"></script>
-		<script type="text/javascript">
-			$(function() {
-			$(window).scroll(function() {
-			if($(this).scrollTop() != 0) {
-			$('#toTop').fadeIn();	
-			} else {
-			$('#toTop').fadeOut();
-			}
-			});
- 	
-			$('#toTop').click(function() {
-				$('body,html').animate({scrollTop:0},800);
-			});	
-		});
-		</script>
-		
 	<! Google Analytics>
 	<script type="text/javascript">
   		var _gaq = _gaq || [];
@@ -114,10 +87,23 @@
   		  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
  		 })();
 	</script>
+	
+	<style>
+	/** Targets the iPad **/
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		#navigationbar {
+		display: none;
+		}
+		
+		div#project_container {
+			margin-top: 197px;
+		}
+	}
+	</style>
+	
 
 
-
-</head>
+	</head>
 	
 	
 	<body>
@@ -135,46 +121,36 @@
 				<li><a href="about.html"onmouseover="document.about.src=nav2b.src" onmouseout="document.about.src=nav2.src"><img src = "gallery/about_link.png" name = 						"about"></a></li>
 				<li><a href="gallery/lau-kee_resume.pdf" target="_blank"onmouseover="document.resume.src=nav3b.src" onmouseout="document.resume.src=nav3.src"><img src 				= "gallery/resume_link.png" name = "resume"></a></li>
 				<li><a href="mailto:klaukee@andrew.cmu.edu"onmouseover="document.contact.src=nav4b.src" onmouseout="document.contact.src=nav4.src"><img src = 
-				"gallery/contact_link.png" name = "contact"></a></li><br>	
-				<li><a href="lg.html"><img src="gallery/prev_project.png"></a></li>
-				<li><a href="msa.html"><img src="gallery/next_project.png"></a></li></ul>
+				"gallery/contact_link.png" name = "contact"></a></li>	
 	</div>
-
+	
+	<div id="project_container">
+		<div class="projectimage">
+			<li><a href="lg.html"onmouseover="document.thmb1.src=button1b.src" onmouseout="document.thmb1.src=button1.src"><img src = "gallery/lg.png" name = 						"thmb1"></a></li>
+			<li><a href="saabradio.html"onmouseover="document.thmb2.src=button2b.src" onmouseout="document.thmb2.src=button2.src"><img src = "gallery/saab.png" name = 				"thmb2"></a></li>
+			<li><a href="msa.html" onmouseover="document.thmb3.src=button3b.src" onmouseout="document.thmb3.src=button3.src"><img src = "gallery/msa.png" name = 					"thmb3"></a></li>
+			<p></p>		
+			<li><a href="adrenaject.html" onmouseover="document.thmb4.src=button4b.src" onmouseout="document.thmb4.src=button4.src"><img src = "gallery/	
+				adrenaject.png" name = "thmb4"></a></li>
+			<li><a href="stepgreen.html" onmouseover="document.thmb5.src=button5b.src" onmouseout="document.thmb5.src=button5.src"><img src = "gallery/stepgreen.png" 				name = "thmb5"></a></li>
+			<li><a href="softsafe.html" onmouseover="document.thmb6.src=button6b.src" onmouseout="document.thmb6.src=button6.src"><img src = "gallery/softsafe.png" 				name = "thmb6"></a></li>
+			<p></p>
+			<li><a href="subwaysiesta.html" onmouseover="document.thmb7.src=button7b.src" onmouseout="document.thmb7.src=button7.src"><img src = "gallery/							subwaysiesta.png" name = "thmb7"></a></li>
+			<li><a href="hexlighting.html" onmouseover="document.thmb8.src=button8b.src" onmouseout="document.thmb8.src=button8.src"><img src = "gallery/
+				hexlighting.png" name = "thmb8"></a></li>
+			<li><a href="pangaea.html" onmouseover="document.thmb9.src=button9b.src" onmouseout="document.thmb9.src=button9.src"><img src = "gallery/				
+				pangaea.png" name = "thmb9"></a></li>
+		</div>
+	</div>
+	
+		<div id="bottombar">
 		
-	<! Begin Project Slideshow>
-	
-	<div id="slideshowtotal">
-	<div id="slideshowWrapper">
-   			 <ul id="slideshow"> 
-   			 			<li><img src="gallery/saab.3.jpg" width="600" height="390" border="0" alt="" /></li>
-        				<li><img src="gallery/saab.2.jpg" width="600" height="390" border="0" alt="" /></li>
-        				<li><img src="gallery/saab.1.jpg" width="600" height="390" border="0" alt="" /></li>
-             </ul>
-	</div></div>
-	
-	<div id="project_content">
-	
-		<h1>SAAB EMERGENCY RADIO</h1>
-		<h2>Industrial Design (Fall 2011)</h2>
-		<h4>This project was an excersize in brand consistency as well as designing for a existing company's target audience. I designed an emergency radio, which was visually complimentary to the Saab 9-5. Before the design process I conducted research alongside Mike Bolster and Conrad Ennis. We studied and explored Saab's visual history, the company's target demographic and the styling of the 9-5. We compiled and synthesized this research in a style guide, which would then inform the companion products we designed independently. </h4><a href="gallery/saab_style_guide_final.pdf" target="_blank">Download the Saab style guide</a><br><br>
-		<li><img src="gallery/saab.4.jpg" width="600px"></li>
-		<li><img src="gallery/saab.5.png"></li>	
-		<h3>Design Process</h3><h4>Extensive sketching and model making was used throughout the design process to arrive at the final design. The final prototype was crafted out of wood.</h4>		
-		<li><img src="gallery/saab.6.jpg" width="600px"></li>
-		<li><img src="gallery/saab.7.jpg" width="600px"></li>
-		<li><img src="gallery/saab.8.jpg" width="600px"></li>
-		<li><img src="gallery/saab.9.jpg" width="600px"></li>	
-		<li><img src="gallery/saab.10.jpg" width="600px"></li>
-	</div>		
-	
-	<div id="bottombar">
-			
-			<div id="bottomcontentproj">
+			<div id="bottomcontent">
 		
-				<div class="copyrightproj">
+				<div class="copyright">
 		 			&#169 Kelly Lau-Kee 2012</div>
 		 
-				<div class="socialnetworkproj">
+				<div class="socialnetwork">
 		 			<li><a href="https://twitter.com/#!/klaukee" onmouseover="document.twitter.src=buttontwitterb.src" 				
 		 			onmouseout="document.twitter.src=buttontwitter.src"><img src = "gallery/twitter_icon.png" name = "twitter"></a></li>
 		 			<li><a href="http://www.facebook.com/klaukee" onmouseover="document.facebook.src=buttonfacebookb.src" 		
@@ -183,18 +159,8 @@
 		 			onmouseout="document.tumblr.src=buttontumblr.src"><img src = "gallery/tumblr_icon.png" name = "tumblr"></a></li>
 		 		</div>
 			</div>
-	</div>
-
-
-	<div id="toTop">Back to Top</div>
-	
-	
-	</div>
-	
-	
+		</div>			
 	
 	</body>
 	
 </html>
-
-
