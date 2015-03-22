@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>Kelly Lau-Kee</title>
+	<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+	<link href="../css/normalize.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+	
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:100,400,700|Open+Sans:300,400' rel='stylesheet' type='text/css'>
+	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+	<script src="../js/modernizr.custom.js"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-7243260-2']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<html>
+
+<body class="sub-page">
+
+	<div id="sub-bg" class="youtube">
+		<div id="header">
+			<div class="navigation project-nav">
+					<nav class="cl-effect-3" id="cl-effect-3">
+						<a href="../index.html">01 WORK</a>
+						<a href="../about.html">02 ABOUT</a>
+						<a href="#section3">03 CONTACT</a>
+						<a href="#section3">04 RESUME</a>
+					</nav>
+			</div>
+			<div id="headertext">
+			 	<h1>YOUTUBE</h1>
+				<h2>INTERACTION DESIGN</h2><br>
+				<p>As a user experience designer with YouTube, I&#39;ve had the opportunity to work on projects that range from the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">watch page</a>, to <a href="https://www.youtube.com/musickey" target="_blank">music</a>, to video ads.</p>
+		 	</div>
+			<div class="project-arrows">
+				<a href="prana.html"><img src="../images/arrow-prev.svg" style="left: 30px; float: left;"></a>
+				<a href="paytango.html"><img src="../images/arrow-next.svg" style="right: 30px; float: right;"></a>
+			</div>
+		</div>
+	</div>
+	<div id="content" class="documentation">	
+		<div id="container">
+		  	<div class="slider single-item">
+		    <div><img src="../images/youtube-01.png"></div>
+		    <div><img src="../images/youtube-02.png"></div>
+		    <div><img src="../images/youtube-03.png"></div>
+		  </div>
+		  	<div class="container-text">
+		  		<h1>Playlists that delight</h1> 
+		  		<p>With the release of YouTube Music, playlists have gained elevated importance on the platform. As the UX owner, I focused on ensuring that playlists would support a seamless music experience across our platforms. This included unifying and refreshing the playlist experience across our deivces and product features.</p>
+	 		</div>
+		</div>
+		<div id="container">
+			<img src="../images/youtube-04.png"><br>
+			<div class="container-text">
+				<h1>A unified YouTube</h1> 
+				<p>I&#39;m currently on the video ads team, where we work to create an ecosystem for advertisers to live alongside viewers and creators. I design for AdWords for Video, Google&#39;s video advertising platform, and have also been involved in visioning projects for new advertising methods.</p>
+			</div>
+		</div>
+		<div id="container">
+			<img src="../images/youtube-05.svg" style="width: 380px; margin-left: 50px;"><br>
+			<div class="container-text">
+				<p>I&#39;m currently on the video ads team, where we work to create an ecosystem for advertisers to live alongside viewers and creators.</p>
+			</div>
+		</div>
+		<div id="footer">
+			<p>&#169; 2015 Kelly Lau-Kee</p>
+		</div>
+	</div>
+	
+	<!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+        <script type="text/javascript" src="../jquery.easing.1.3.js"></script>
+        
+		<script type="text/javascript">
+            $(function() {
+                $('ul.nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1800,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+            });
+        </script>
+
+			<!-- Slick slideshow -->
+		  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		  <script type="text/javascript" src="../slick/slick.min.js"></script>
+
+		  <script type="text/javascript">
+		    $(document).ready(function(){
+				$('.single-item').slick({
+					dots: true,
+					arrows: true
+				});
+		    });
+		  </script>
+		
+		
+
+</body>
+
+</html>

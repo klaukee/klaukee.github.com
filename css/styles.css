@@ -1,0 +1,403 @@
+/* CSS Styles */
+
+html, body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+/* BACKGROUND AND HEADER */
+#bg{
+	height: 600px;
+}
+.bg-main{
+	background-color: #232325;
+}
+#content, #project-title{
+    opacity:0;
+    opacity: 1 \9; /*just in case ie*/
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+#header{
+	width: 100%;
+    position: absolute;
+	padding-top: 20px;
+    z-index: 1;
+	text-align: center;
+	top: 0;
+}
+#header .navigation {
+	letter-spacing: 0.1em;
+	font-size: 9pt;
+	font-family: 'Montserrat';
+}
+.navigation a{
+	color: white; 
+	opacity: .4;
+}
+#main-logo {
+	position: absolute;
+	z-index: 400;
+	width: 320px;
+	height: 200px;
+	top: 250px;
+	left: 50%;
+	margin-left: -160px;
+	text-align: center;
+	color: white;
+}
+#main-logo h1{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32pt;
+	font-weight: 100;
+	margin-top: 0px;
+}
+#main-logo hr{
+	position: relative;
+	-moz-transform: rotate(-25deg);  
+    -o-transform: rotate(-25deg);  
+  	-webkit-transform: rotate(-25deg);  
+  	-ms-transform: rotate(25deg);  
+    transform: rotate(-25deg);
+    filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',  
+             M11=0.9914448613738104, M12=-0.13052619222005157,M21=0.13052619222005157, M22=0.9914448613738104); 
+   	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.9914448613738104, M12=-0.13052619222005157, M21=0.13052619222005157, M22=0.9914448613738104,sizingMethod='auto expand')"; 
+	height: 2px;
+	border: 0;
+	color: white;
+	background-color: white;
+	width: 38px;
+	margin-top: -56px;
+}
+#main-logo hr{
+ -webkit-animation: rotation 2s; /* Safari 4+ */
+  -moz-animation: rotation 2s; /* Fx 5+ */
+  -o-animation: rotation 2s; /* Opera 12+ */
+  animation:  rotation 2s; /* IE 10+, Fx 29+ */
+}
+#main-logo h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 100;
+	font-size: 9pt;
+	letter-spacing: 0.1em;
+	color: white;
+	padding-top: 25px;
+	opacity: .2;
+}
+
+/* BEGIN PROJECTS SECTION */
+#projects{
+	text-align: center;
+	z-index: 1;
+    -webkit-animation-delay: .5s;
+    -moz-animation-delay: .5s;
+    animation-delay: .5s;
+}
+#section {
+	overflow: hidden;
+	color: #3D3D3D;
+	height: 560px;
+}
+a{
+	text-decoration: none;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+
+/* SECTION BACKGROUNDS*/
+.section1 {	
+	margin: 20px 20px 10px 20px;
+	background-color: #F2F2F2;
+	background-image:url(../images/prana-00.png);
+	background-size: 980px;
+	background-repeat: no-repeat;
+	background-position: center 165px;
+}
+.section2 {
+	background-color: #D4D8DB;
+	background-image:url(../images/youtube-00.png);
+	background-repeat: no-repeat;
+	background-position: center 140px;
+	background-size: 130px;
+	margin: 20px 20px 10px 20px;
+}
+.section3 {
+	background-color: #E5DEDA;
+	margin: 20px 20px 10px 20px;
+	background-image:url(../images/paytango-00.svg);
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: center 125px;
+}
+.section4{
+	background-color: #EAE3E3;
+	background-image:url(../images/youtube-00.png);
+	background-repeat: no-repeat;
+	background-position: center 140px;
+	background-size: 130px;
+	margin: 20px 20px 10px 20px;
+}
+.section1 #text h1{
+	color: #333333;
+}
+.section1 #text h2{
+	color: #7C7C7C;
+}
+.section4 #text p, .section2 #text p{
+	color: white;
+}
+
+/* SECTION TEXT */
+#section h1{
+	font-family: 'Montserrat';
+	font-size: 28pt;
+	display: block;
+	color: white;
+	width: 100%;
+	z-index: 2;
+	position: relative;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-bottom: 0px;
+}
+#section h2{
+	font-family: 'Montserrat';
+	font-size: 9pt;
+	font-weight: 700;
+	padding-bottom: 5px;
+	color: white;
+}
+#section p{
+	font-family: 'Open Sans';
+	font-size: 10pt;
+	font-weight: 300;
+	display: inline-block;
+	line-height: 1.4em;
+	color: #666666;
+	letter-spacing: 0.01em;
+	width: 380px;
+	margin-top: 10px;
+}
+#primaryimage{
+	width: 100%;
+}
+#primaryimage img{
+	position: relative;
+	top: 50%;
+	transform: translateY(50%);
+}
+#bottom-text{
+	margin-top: 240px;
+}
+#footer {
+	padding: 20px;
+	text-align: center;
+}
+#footer p {
+	font-family: 'Montserrat';
+	font-size: 10pt;
+	color: #D5D5D5;
+}
+#view-button {
+	margin-top: 160px;
+}
+#view-button a{
+	color: #666666;
+	opacity: 0;
+	font-family: 'Montserrat';
+	font-size: 10pt;
+	border-style: solid;
+	border-width: 2px;
+	padding: 10px 20px;
+	font-weight: 400;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+}
+#view-button a:hover{
+	color: #333333;
+}
+#section:hover a{
+	opacity: 1;
+}
+
+/* MAIN PROJECT PAGES*/
+.sub-page{
+	background-color: #f9f9f9;
+}
+#sub-bg{
+	height: 480px;
+	background-color: white;
+}
+#header{
+	padding: 20px 0 70px 0;
+}
+#headertext {
+	margin-top: 120px;
+    opacity:0;
+    opacity: 1 \9; /*just in case ie*/
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+.project-arrows {
+	text-align: left;
+	margin-top: -150px;
+}
+.project-arrows img{
+	width: 50px;
+	position: absolute;
+}
+.project-arrows a {
+	opacity: .7;
+}
+.project-arrows a:hover {
+	opacity: .4;
+}
+#headertext hr{
+	height: 1px;
+	width: 35px;
+	border: 0;
+	background-color: #333333;
+}
+#headertext h1{
+	font-family: 'Montserrat';
+	font-size: 24pt;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+#headertext h2{
+	color: #999999;
+	font-family: 'Montserrat';
+	font-size: 9pt;
+	border-style: solid;
+	border-width: 1.5px;
+	padding: 10px 20px;
+	font-weight: 400;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+#headertext p, .documentation p{
+	font-family: 'Open Sans';
+	font-size: 11pt;
+	font-weight: 300;
+	display: inline-block;
+	line-height: 1.8em;
+	color: #333333;
+	letter-spacing: 0.01em;
+	width: 600px;
+	margin-top: 20px;
+}
+.documentation h1{
+	font-family: 'Open Sans';
+	font-size: 14pt;
+	font-weight: 500;
+	margin-bottom: 0px;
+}
+#container{
+	padding: 50px 0 100px 0;
+}
+#container img{
+	width: 900px;
+}
+.container-text{
+	padding-top: 20px;
+}
+#headertext a, .container-text a{
+	color: #333333;
+	border-bottom: 1px solid #CBCBCB;
+	padding-bottom: 3px;
+}
+.documentation{
+	margin-top: 70px;
+	text-align: center;
+}
+.gif-container {
+  width: 850px;
+  display: inline-block;
+}
+
+
+@media (max-width: 600px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes rotation {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(-25deg); }
+}
+@-moz-keyframes rotation {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(-25deg); }
+}
+@-o-keyframes rotation {
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(-25deg); }
+}
+@keyframes rotation {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-25deg); }
+}
+

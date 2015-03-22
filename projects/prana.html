@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+
+<head>
+	<title>Kelly Lau-Kee</title>
+	<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+	<link href="../css/normalize.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+	
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:100,400,700|Open+Sans:300,400' rel='stylesheet' type='text/css'>
+	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+	<script src="../js/modernizr.custom.js"></script>
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-7243260-2']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<html>
+
+<body class="sub-page">
+
+	<div id="sub-bg" class="youtube">
+		<div id="header">
+			<div class="navigation project-nav">
+					<nav class="cl-effect-3" id="cl-effect-3">
+						<a href="../index.html">01 WORK</a>
+						<a href="../about.html">02 ABOUT</a>
+						<a href="#section3">03 CONTACT</a>
+						<a href="#section3">04 RESUME</a>
+					</nav>
+			</div>
+			<div id="headertext">
+			 	<h1>PRANA</h1>
+				<h2>INDUSTRIAL &amp; INTERACTION DESIGN</h2><br>
+				<p>Prana is a beautiful solution for active people who are on-the-go and need to take daily medications. The Prana system consists of a pill box.</p>
+		 	</div>
+			<div class="project-arrows">
+				<a href="youtube.html"><img src="../images/arrow-next.svg" style="right: 30px; float: right;"></a>
+			</div>
+		</div>
+	</div>
+	<div id="content" class="documentation">	
+		<div id="container">
+			<img src="../images/prana-01.png" style="width: 1100px;"><br>
+			<div class="container-text">
+				<p>Prana is a beautiful solution for active people who are on-the-go, but need to take daily medications. The system consists of a pill box with embedded smart technology that communicates with the mobile app. The app allows you to manage perscriptions and set alarms so that you medications aren&#39;t another chore.<br><br>
+				Designed in collaboration with <a href="http://www.cioffreda.com/cioffreda/home.html" target="blank">Chris Ioffreda</a>
+				</p>
+			</div>
+		</div>
+		<div id="container">
+			<div class="container-text">
+				<h1 style="color: rgb(57, 175, 236);font-size: 42pt; font-weight:300;">15%</h1>
+				<p style="width: 400px;">of adults aged 18-29 live with at least one of the six most chronic conditions: arthritis, asthma, cancer, diabetes, heart disease and hypertension.
+				</p><br>
+				<p style="width: 300px; color:#999999;">Source: Center for Disease Control
+				</p>
+			</div>
+		</div>
+		<div id="container">
+			<img src="../images/prana-02.png" style="width: 680px;"><br>
+			<div class="container-text">
+				<h1>A digital experience</h1> 
+				<p>Add your medications and set daily reminders using the Prana app. Prana learns more and more about your medication habits and will alert you to take your pills at the optimal time on both your smartphone and the Prana pillbox. </p>
+			</div>
+		</div>
+		<div id="container">
+			<img src="../images/prana-03.png" style="width: 800px;"><br>
+			<div class="container-text">
+				<h1>Collections / designers / models</h1> 
+				<p>First purchase the main dock, which includes emtpy container pods. Then select from several pod options, the standard single pod, double and triple to better organize your medication.</p>
+			</div>
+		</div>
+		<div id="container">
+			<img src="../images/prana-04.png" style="width: 600px;"><br>
+			<img src="../images/prana-05.png" style="width: 450px;padding-top: 40px;"><br>
+			<div class="container-text">
+				<p>No need to take the entire case with you. Each pod attaches to each other with magnets, allows you to take a few lightweight containers with you on the go. </p>
+			</div>
+		</div>
+		<div id="container">
+			<img src="../images/prana-06.png" style="width: 750px;"><br>
+			<img src="../images/prana-07.png" style="width: 750px;padding-top: 40px;"><br>
+			<div class="container-text">
+				<h1>Customize Prana</h1> 
+				<p>First purchase the main dock, which includes emtpy container pods. Then select from several pod options, the standard single pod, double and triple to better organize your medication.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<p>&#169; 2015 Kelly Lau-Kee</p>
+	</div>
+	
+	<!-- The JavaScript -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+        <script type="text/javascript" src="../jquery.easing.1.3.js"></script>
+        
+		<script type="text/javascript">
+            $(function() {
+                $('ul.nav a').bind('click',function(event){
+                    var $anchor = $(this);
+                    
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1800,'easeInOutExpo');
+                    /*
+                    if you don't want to use the easing effects:
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top
+                    }, 1000);
+                    */
+                    event.preventDefault();
+                });
+            });
+        </script>
+
+			<!-- Slick slideshow -->
+		  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		  <script type="text/javascript" src="../slick/slick.min.js"></script>
+
+		  <script type="text/javascript">
+		    $(document).ready(function(){
+				$('.single-item').slick({
+					dots: true,
+					arrows: true
+				});
+		    });
+		  </script>
+		
+		
+
+</body>
+
+</html>
