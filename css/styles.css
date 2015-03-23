@@ -119,8 +119,8 @@ a{
 
 /* SECTION BACKGROUNDS*/
 .section1 {	
-	margin: 20px 20px 10px 20px;
 	background-color: #F2F2F2;
+	margin: 20px 20px 10px 20px;
 	background-image:url(../images/prana-00.png);
 	background-size: 980px;
 	background-repeat: no-repeat;
@@ -143,11 +143,11 @@ a{
 	background-position: center 125px;
 }
 .section4{
-	background-color: #EAE3E3;
-	background-image:url(../images/youtube-00.png);
+	background-color: #EDEFED;
+	background-image:url(../images/lunargala-00.png);
 	background-repeat: no-repeat;
-	background-position: center 140px;
-	background-size: 130px;
+	background-position: center 50px;
+	background-size: 420px;
 	margin: 20px 20px 10px 20px;
 }
 .section1 #text h1{
@@ -335,6 +335,11 @@ a{
 .gif-container {
   width: 850px;
   display: inline-block;
+}
+
+#subpage {
+  display: block;
+  text-align: center;
 }
 
 
